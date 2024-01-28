@@ -10,7 +10,6 @@ RUN apk update \
     && apk upgrade \
     && apk add --no-cache \
     bash \
-    curl \
     python3 \
     py3-pip \
     openssl \
@@ -35,7 +34,7 @@ RUN wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.54.4/te
     && chmod +x /usr/local/bin/terragrunt
 
 # Install SOPS
-RUN curl -LO https://github.com/getsops/sops/releases/download/v3.8.1/sops-v3.8.1.linux.amd64 \
+RUN wget https://github.com/getsops/sops/releases/download/v3.8.1/sops-v3.8.1.linux.amd64 \
     && mv sops-v3.8.1.linux.amd64 /usr/local/bin/sops \
     && chmod +x /usr/local/bin/sops
 
