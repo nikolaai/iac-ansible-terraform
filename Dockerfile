@@ -1,5 +1,5 @@
 # Use the Alpine Linux base image
-FROM alpine:3.18
+FROM alpine:3.19
 
 # Create a new user named "runner" with UID 1000
 RUN adduser -D -u 1000 -s /bin/bash -g "CI runner" runner
