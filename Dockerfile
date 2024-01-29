@@ -19,6 +19,7 @@ RUN apk update \
     ansible \
     tar \
     zstd \
+    gpg \
     && rm -rf /var/cache/apk/*
 
 # Install Terraform
