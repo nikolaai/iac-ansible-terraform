@@ -20,6 +20,7 @@ RUN apk update \
     tar \
     zstd \
     gpg \
+    gpg-agent \
     && rm -rf /var/cache/apk/*
 
 # Install Terraform
